@@ -110,7 +110,7 @@ const App = () => {
 	useEffect(() => {
 		const dateFetch = async () => {
 			try {
-				const res = await fetch(`${process.env.REACT_APP_API_HOST}/questions`);
+				const res = await fetch(`http://localhost:8000/questions`);
 				const data = await res.json();
 				dispatch({ type: "dataReceived", payload: data });
 			} catch (error) {
