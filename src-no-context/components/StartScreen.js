@@ -1,8 +1,4 @@
-import { useQuiz } from "../contexts/QuizContext";
-
-const StartScreen = () => {
-	const { numQuestions, dispatch } = useQuiz();
-
+function StartScreen({ numQuestions, dispatch }) {
 	return (
 		<div className="start">
 			<h2 className="main-title">Welcome to the React quize</h2>
@@ -17,6 +13,6 @@ const StartScreen = () => {
 			</button>
 		</div>
 	);
-};
+}
 
 export default StartScreen;
